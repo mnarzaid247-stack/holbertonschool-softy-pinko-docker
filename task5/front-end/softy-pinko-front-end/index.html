@@ -631,13 +631,11 @@
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
-
-
     <script>
     $(function() {
         $.ajax({
             type: "GET",
-            url: "http://localhost:5252/api/hello",,
+            url: "/api/hello",
             success: function (data) {
                 console.log(data);
                 $('#dynamic-content').text(data);
@@ -645,7 +643,6 @@
         });
     });
 </script>
-
 
   </body>
 </html>
